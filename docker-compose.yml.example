@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  crystal:
+    build: ./hello_crystal
+    working_dir: /code
+    command: sleep 30000
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10k"
+        max-file: "3"
+    volumes:
+      - "./hello_crystal:/code"
