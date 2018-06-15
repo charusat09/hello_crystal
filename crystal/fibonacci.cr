@@ -10,6 +10,6 @@ end
 
 Benchmark.ips do |x|
   x.report("Fibonacci Number: ") do
-  	fibonacci_number(40)
+    fibonacci_number(40)
   end
 end

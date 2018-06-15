@@ -21,8 +21,7 @@ end
 
 Benchmark.bm do |x|
   x.report("Binary Search using iteration: ") do
-  	binary_search(array, 0, 99999, 5987)
+    binary_search(array, 0, 99999, 5987)
   end
 end
 
-puts binary_search(array, 0, 99999, 5987)

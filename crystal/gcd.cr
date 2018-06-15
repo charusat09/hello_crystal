@@ -6,10 +6,8 @@ def gcd(num1, num2)
   gcd(num2, temp)
 end
 
-puts gcd(0,2)
-
 Benchmark.ips do |x|
-  x.report("Binary Search using iteration: ") do
-  	gcd(888888, 444444)
+  x.report("GCD: ") do
+    gcd(888888, 444444)
   end
 end

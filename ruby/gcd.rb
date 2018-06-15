@@ -7,7 +7,7 @@ def gcd(num1, num2)
 end
 
 Benchmark.bm do |x|
-  x.report("Binary Search using iteration: ") do
-  	gcd(654_321_987, 345_22)
+  x.report("GCD: ") do
+    gcd(654_321_987, 345_22)
   end
 end
